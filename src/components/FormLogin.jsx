@@ -78,22 +78,11 @@ const FormLogin = () => {
                                 onChange={(e) => setPassword(e.target.value)}
                             />
                             </Form.Group>
-
-                            {/* <Form.Group controlId="formConfirmPassword" className='pt-2 pb-4'>
-                            <Form.Label className="text-light">Confirmar Contraseña</Form.Label>
-                            <Form.Control
-                                type="password"
-                                placeholder="Confirmar Contraseña"
-                                value={confirmPassword}
-                                onChange={(e) => setConfirmPassword(e.target.value)}
-                            />
-                            </Form.Group> */}
-
                             <Button variant="outline-warning" type="submit">Login</Button>
                         </Form>
                         </Col>
                 </Row>
-                <Modal show={showModal} onHide={cierreModal}>
+                <Modal show={showModal} onHide={cierreModal} centered>
                     {/* Muestra el titulo del Modal */}
                     <Modal.Header closeButton>
                     <Modal.Title>

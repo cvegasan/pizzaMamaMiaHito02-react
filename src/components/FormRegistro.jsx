@@ -108,7 +108,7 @@ const FormRegistro = () => {
                         </Form>
                         </Col>
                 </Row>
-                <Modal show={showModal} onHide={cierreModal}>
+                <Modal show={showModal} onHide={cierreModal} centered>
                     {/* Muestra el titulo del Modal */}
                     <Modal.Header closeButton>
                     <Modal.Title>
