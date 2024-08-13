@@ -1,6 +1,8 @@
 import { useState } from 'react';
-import { Modal, Button, Form, Row, Col } from 'react-bootstrap';
+import {Button, Form, Row, Col } from 'react-bootstrap';
 import imagenPizza from '../../public/headerPizza.jpg'
+import MensajeModal from './MensajeModal';
+
 const FormRegistro = () => {
     const [email, setEmail] = useState('');                     //Ingreso de la información
     const [password, setPassword] = useState('');               //Ingreso de la información
@@ -108,22 +110,12 @@ const FormRegistro = () => {
                         </Form>
                         </Col>
                 </Row>
-                <Modal show={showModal} onHide={cierreModal} centered>
-                    {/* Muestra el titulo del Modal */}
-                    <Modal.Header closeButton>
-                    <Modal.Title>
-                    {modalTitle}
-                    </Modal.Title>
-                    </Modal.Header>
-                    {/* Muestra el mensaje */}
-                    <Modal.Body>{modalMessage}</Modal.Body>
-                    {/* Agrega el botón al footer del Modal */}
-                    <Modal.Footer>
-                    <Button variant="outline-warning" onClick={cierreModal}>
-                        Cerrar
-                    </Button>
-                    </Modal.Footer>
-                </Modal>
+                <MensajeModal
+                    showModal={showModal}
+                    cierreModal={cierreModal}
+                    modalTitle={modalTitle}
+                    modalMessage={modalMessage}
+                />
             </div>
         </div>
   );
