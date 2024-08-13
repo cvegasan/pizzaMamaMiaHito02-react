@@ -1,4 +1,4 @@
-import iconPizza from '../../public/icon-pizza.png'
+import iconPizza from '/icon-pizza.png'
 import { Navbar, Nav, Button, Container } from 'react-bootstrap';
 // recordar condición ? true : false
 import FormatoMiles from './FormatoMiles';

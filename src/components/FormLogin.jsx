@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import {Button, Form, Row, Col } from 'react-bootstrap';
-import imagenLogin from '../../public/loginPizzaCandado.jpg'
+import imagenLogin from '/loginPizzaCandado.jpg'
 import MensajeModal from './MensajeModal';
 
 const FormLogin = () => {

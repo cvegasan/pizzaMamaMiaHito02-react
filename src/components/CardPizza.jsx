@@ -1,5 +1,5 @@
 import FormatoMiles from './FormatoMiles';
-import iconPizza from '../../public/icon-pizza.png'
+import iconPizza from '/icon-pizza.png'
 import { Card, Button, ListGroup } from 'react-bootstrap';
 
 const CardPizza = (props) => {
